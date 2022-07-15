@@ -26,7 +26,7 @@ const Header = () => {
           type="text"
           name=""
           id=""
-          placeholder="start your search"
+          placeholder="Search Places"
           className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
         />
         <SearchIcon className="hidden md:inline-flex h-8  bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
@@ -34,11 +34,12 @@ const Header = () => {
 
       {/* Right */}
       <div className="flex items-center space-x-4 justify-end text-gray-500 ">
-        {/* Menus with User */}
-        <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
-          <p className="">EN</p>
-          <GlobeAltIcon className="h-6 cursor-pointer" />
+        {/* Change Languages */}
+        <div className="flex items-center space-x-2 ">
+          <p className="text-sm md:text-md">EN</p>
+          <GlobeAltIcon className="h-5 md:h-6 cursor-pointer" />
         </div>
+        {/* Menus with User */}
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
           <MenuIcon className="h-6" />
           <UserCircleIcon className="h-6" />
